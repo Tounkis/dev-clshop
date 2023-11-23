@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClShop - Page D'acceuil</title>
+    <!-- liaison des fichiers bootstrap  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/myscript.js' %}"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Debut section menu de navigation  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="{% url 'home' %}">CLSHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="{% url 'home' %}">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BOUTIQUE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{% url 'categorie' 'ordinateur' %}">Ordinateur</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{% url 'categorie' 'telephone' %}">Telephone</a></li>
+                                <li><a class="dropdown-item" href="{% url 'categorie' 'tablette' %}">Tablette</a></li>
+                                <li><a class="dropdown-item"
+                                        href="{% url 'categorie' 'electromenager' %}">Electromenager</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{% url 'about' %}">A PROPOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{% url 'contact' %}">CONTACT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="register.html">INSCRIPTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="login.html">CONNEXION</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Chercher</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Fin section menu de navigation  -->
+
+        {% block banner %}{% endblock banner %}
+
+        {% block content %}{% endblock content %}
+
+
+        <br><br><br><br><br>
+        <!-- Debut section pied de page  -->
+        <footer class="container-fluid fixed-bottom bg-dark text-center p-3 mt-5 ">
+            <p class="text-white">Copytight - 2023 | Develop By SIEKYIT</p>
+        </footer>
+        <!-- Fin section pied de page  -->
+    </div>
+</body>
+
+</html>

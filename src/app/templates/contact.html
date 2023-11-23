@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block banner %}
+<!-- Debut section carrousel  -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/image-boutique/banner.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/image-boutique/banner1.png' %}" class="d-block w-100" alt="...">
+        </div>
+
+    </div>
+</div>
+<!-- Fin section carrousel  -->
+{% endblock banner %}
+
+{% block content %}
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- Debut section formualire de contact  -->
+                    <form action="">
+                        <h3 class="fw-bold">Nous Envoyé Un Message</h3>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Saisir Votre Nom">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="email" placeholder="Saisir Votre Adresse email">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Objet du message">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" cols="5" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+                    <!-- Fin section formualire de contact  -->
+                </div>
+    
+                <div class="col-sm-6">
+                    <h3 class="fw-bold">Contact</h3>
+                    <p>Quartier : Lambangy</p>
+                    <p>Commune : Ratoma</p>
+                    <p>Ville : Conakry</p>
+                    <p>Email : clshop@gmail.com</p>
+                    <p>Telephone : +224 620 00 00 00</p>
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}

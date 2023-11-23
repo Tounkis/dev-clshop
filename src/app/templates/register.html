@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <!-- liaison des fichiers bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Debut section menu de navigation  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">CLSHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BOUTIQUE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="electronic.html">Electronique</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="register.html">INSCRIPTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="login.html">CONNEXION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Chercher</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin section menu de navigation  -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3 bg-light shadow p-5 rounded">
+                <h2 class="fw-bold">Inscription</h2>
+                <hr>
+                <!-- Debut formulaire de connexion  -->
+                <form action="">
+                    <div class="mb-3 mt-3">
+                        <label class="form-label" for="">Nom d'utilisateur :</label>
+                        <input class="form-control" type="text" >
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label class="form-label" for="">Email :</label>
+                        <input class="form-control" type="email" >
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="">Mot de passe :</label>
+                        <input class="form-control" type="password" >
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="">Confirmer Mot de passe :</label>
+                        <input class="form-control" type="password" >
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary">S'inscrire</button>
+                    </div>
+                    <div class="text-primary fw-bold">
+                        <small>
+                            Vous avez déjà un compte ? <a href="" class="text-danger">Se Connecter</a>
+                        </small>
+                    </div>
+                </form>
+                <!-- Fin formulaire de connexion  -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Debut section pied de page  -->
+    <footer class="container-fluid fixed-bottom bg-dark text-center p-2 mt-5">
+        <p class="text-white">Copytight - 2023 | Develop By SIEKYIT</p>
+    </footer>
+    <!-- Fin section pied de page  -->
+</body>
+
+</html>

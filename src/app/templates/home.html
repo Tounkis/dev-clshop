@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block banner %}
+<!-- Debut section carrousel  -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/image-boutique/banner.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/image-boutique/banner1.png' %}" class="d-block w-100" alt="...">
+        </div>
+
+    </div>
+</div>
+<!-- Fin section carrousel  -->
+{% endblock banner %}
+
+{% block content %}
+<!-- Debut section description du site  -->
+<div class="card mt-2 p-3" style="background: #000075;">
+    <div class="card-body bg-primary">
+        <h2 class="text-white text-center">Produits Electronique</h2>
+        <p class="text-white text-center">
+            Bienvenue sur clshop ! Nous sommes votre guichet unique pour les derniers téléphones, ordinateurs,
+            tablettes et équipements électroménagers. Explorez notre vaste gamme de produits, allant des
+            smartphones aux ordinateurs de bureau, en passant par les tablettes polyvalentes et les appareils
+            électroménagers pratiques. Chez nous, vous trouverez une qualité garantie, des prix compétitifs, un
+            service client exceptionnel, une livraison rapide et sécurisée, ainsi qu'une garantie de
+            satisfaction à 100%.
+        </p>
+    </div>
+</div>
+<!-- Fin section desciption du site  -->
+<!-- Debut section produits  -->
+ <div class="card mt-4 p-2" style="background-color: #000075;">
+    <h3 class="text-center text-white fs-1">Nos Produits</h3>
+</div>
+<div class="container">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Samsung Galaxy A50</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="product-detail.html" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">TV Smart 32</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="product-detail.html" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p3.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Acer Core i5</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p4.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Frigo D20</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Samsung Galaxy A50</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">TV Smart 32</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p3.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Acer Core i5</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <img src="{% static 'images/image-boutique/p4.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Frigo D20</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="btn btn-primary w-100">Acheter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin section produits  -->
+{% endblock content %}

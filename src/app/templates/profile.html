@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <!-- liaison des fichiers bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Debut section menu de navigation  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="index.html">CLSHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BOUTIQUE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="electronic.html">Electronique</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="register.html">INSCRIPTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="login.html">CONNEXION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Chercher</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin section menu de navigation  -->
+
+
+        <div class="container my-3">
+            <div class="row">
+                <h3>Bienvenue <span class="text-capitalize">sieky</span></h3>
+
+                <div class="col-sm-2 border-end">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="profile.html" class="btn btn-primary">Profile</a></li>
+                        <li class="list-group-item"><a href="address.html" class="btn btn-outline-primary">Adresse</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-8 offset-sm-1">
+                    <form action="" method="post">
+
+                        <label for="id_name">Nom :</label>
+                        <input type="text" name="name" class="form-control" maxlength="200" required id="id_name">
+                        <small class="text-danger"></small> <br>
+
+                        <label for="id_locality">Quartier :</label>
+                        <input type="text" name="locality" class="form-control" maxlength="200" required
+                            id="id_locality">
+                        <small class="text-danger"></small> <br>
+
+                        <label for="id_city">Ville :</label>
+                        <input type="text" name="city" class="form-control" maxlength="50" required id="id_city">
+                        <small class="text-danger"></small> <br>
+
+                        <label for="id_mobile">Telephone :</label>
+                        <input type="number" name="mobile" class="form-control" required id="id_mobile">
+                        <small class="text-danger"></small> <br>
+
+                        <label for="id_state">Region :</label>
+                        <select name="state" class="form-control" required id="id_state">
+                            <option value="" selected>---------</option>
+                            <option value="basse guinee">Basse Guinée</option>
+                            <option value="moyenne guinee">Moyenne Guinée</option>
+                            <option value="haute guinee">Haute Guinée</option>
+                            <option value="guinee forestiere">Guinée Forestiere</option>
+                        </select>
+                        <small class="text-danger"></small> <br>
+
+                        <div class="col-12 mt-3">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Debut section pied de page  -->
+        <footer class="container-fluid fixed-bottom bg-dark text-center p-2 mt-5">
+            <p class="text-white">Copytight - 2023 | Develop By SIEKYIT</p>
+        </footer>
+        <!-- Fin section pied de page  -->
+    </div>
+</body>
+
+</html>
